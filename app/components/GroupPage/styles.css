@@ -1,0 +1,6 @@
+.loginButton {
+  height: 50px;
+  width: 200px;
+  background: red;
+  cursor: pointer;
+}
