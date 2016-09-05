@@ -2,15 +2,18 @@
 
 ## Installation
 
-``` npm install
+```
+npm install
 ```
 
 ## Development
 
-``` npm run watch
+```
+npm run watch
 ```
 
 ## Start a server
 
-``` npm start
+```
+npm start
 ```
