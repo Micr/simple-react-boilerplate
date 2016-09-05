@@ -1,8 +1,8 @@
 {
   "name": "sport_events",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple React Boilerplate",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress --colors --watch"

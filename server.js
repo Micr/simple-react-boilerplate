@@ -3,14 +3,14 @@ var app = express();
 // var passport = require('passport')
 var path = require('path');
 var fs = require('fs');
-var MongoClient = require('mongodb').MongoClient;
+// var MongoClient = require('mongodb').MongoClient;
 var session = require('express-session');
-var db;
+// var db;
 
 // Connect to the db
-MongoClient.connect("mongodb://localhost:27017/sports", function(err, __db__) {
-  db = __db__;
-});
+// MongoClient.connect("mongodb://localhost:27017/sports", function(err, __db__) {
+//   db = __db__;
+// });
 
 app.use(express.static('build'));
 
@@ -21,20 +21,11 @@ app.use(session({
 }));
 
 app.use('/login', function (req, res) {
-  const password = req.password;
-
-  var cursor = db.collection('users').findOne({ name: 'admin' }, function (err, doc) {
-    if (doc.password === password) {
-      req.session.user = doc;
-      res.send('authorized');
-    } else {
-      res.send('unauthorized');
-    }
-  });
+  res.send('Login route used')
 });
 
 app.use('/admin', function (req, res) {
-  var session = req.session;
+  res.send('Admin route used');
 });
 
 app.get('*', (req, res) => {

@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
-const GroupPage = ({ onLoginClick }) =>
+const FrontPage = ({ onLoginClick }) =>
   <div className={styles.loginButton} onClick={() => onLoginClick()} />;
 
-GroupPage.propTypes = {
+FrontPage.propTypes = {
   onLoginClick: PropTypes.func,
 };
 
-export default GroupPage;
+export default FrontPage;
